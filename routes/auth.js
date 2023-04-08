@@ -1,0 +1,10 @@
+import express from 'express'
+
+const router = express.Router()
+
+router.get('/:message', (req, res) =>{ ///callback function
+    res.status(200).send(req.params.message);
+  });
+
+
+  export default router;
