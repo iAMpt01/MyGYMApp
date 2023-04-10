@@ -1,10 +1,11 @@
-import express from 'express'
+import express from "express";
 
 const router = express.Router()
 
-router.get('/:message', (req, res) =>{ ///callback function
-    res.status(200).send(req.params.message);
-  });
+//constrollers
+import { showMessage } from "../controllers/auth";
+
+router.get('/:message', showMessage);
 
 
-  export default router;
+  module.exports = router;
