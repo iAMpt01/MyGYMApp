@@ -15,7 +15,8 @@ const RegisterForm=({
         className="from-control" 
         placeholder="Enter name " 
         value={name} 
-        onChange={(e) => setName(e.target.value)}/>
+        onChange={(e) => setName(e.target.value)}
+        />
        </div>
 
        <div className=" from-group mb-3">
@@ -25,7 +26,8 @@ const RegisterForm=({
         className="from-control" 
         placeholder="Enter email " 
         value={email} 
-        onChange={(e) => setEmail(e.target.value)}/>
+        onChange={(e) => setEmail(e.target.value)}
+        />
        </div>
 
        <div className=" from-group mb-3">
@@ -35,7 +37,8 @@ const RegisterForm=({
         className="from-control" 
         placeholder="Enter password " 
         value={password} 
-        onChange={(e) => setPassword(e.target.value)}/>
+       onChange={(e) => setPassword(e.target.value)}
+       />
        </div>
 
        <button className="btn btn-primary">Submit</button>
