@@ -4,10 +4,11 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 /// 1. import react-redux and redux
-import {createStore} from 'redux'
-import {Provider} from 'react-redux'
-import { composeWithDevTools } from 'redux-devtools-extension';
+import {createStore, combineReducers} from 'redux' //un magazin redux
+import {Provider} from 'react-redux'// gestionarea starii app
+import { composeWithDevTools } from 'redux-devtools-extension'; //mag redux infasurat in dev pt debb
 import rootreducer from "./reducers"
+import react, {Fragment} from 'react';
 
 /// 3. combine multiple reducers
 
@@ -18,7 +19,8 @@ const store = createStore(rootreducer, composeWithDevTools());
 
 ReactDOM.render(
 <React.StrictMode>
-  <Provider store={store}>
+{/* pt a furniza magazinul intregii aplicatii */}
+  <Provider store={store}> 
   <App />
   </Provider>
 </React.StrictMode>,
@@ -27,3 +29,4 @@ document.getElementById('root')
 
 
 reportWebVitals();
+
