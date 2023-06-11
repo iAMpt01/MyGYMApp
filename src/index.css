@@ -1,0 +1,13 @@
+.logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+  }
+
+  .slider-image {
+    width: 10px; /* Set the desired width */
+    height: 10px; /* Maintain aspect ratio */
+  }
+  
+  .card {
+    background-color: yellow;
+  }
